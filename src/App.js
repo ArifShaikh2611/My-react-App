@@ -6,6 +6,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <h1 style={headerStyle}>Age Showcase</h1>
       <MyPerson name="Arif" age="24" />
       <MyPerson name="Amol" age="25" />
       <MyPerson name="Shivam" age="25" />
@@ -15,6 +16,15 @@ class App extends Component {
 }
 
 
+class HeaderInput extends Component {
+  render() {
+    return(
+      <div>
+        </div>
+    );
+  }
+}
+
 function MyPerson(props){
   return(
     <div className="person">
@@ -23,5 +33,10 @@ function MyPerson(props){
     </div>
   );
 }
+
+
+var headerStyle = {
+  textAlign :'center'
+};
 
 export default App;
