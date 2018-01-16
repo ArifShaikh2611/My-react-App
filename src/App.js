@@ -28,7 +28,9 @@ class HeaderInput extends Component {
       Uage : this.state.Uage
     }
     this.state.StickData.push(usrData);
-    this.setState({StickData:this.state.StickData})
+    this.setState({StickData:this.state.StickData});
+    this.setState({Uname:""});
+    this.setState({Uage:""});
     
   }
 
